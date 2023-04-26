@@ -20,7 +20,7 @@ export function useScrollTo(
   const innerRef = useRef(null)
   const ref = _ref || innerRef
 
-  const handleScroll = useCallback(() => getHandleScroll(ref), [ref.current])
+  const handleScroll = useCallback(() => getHandleScroll(ref), [ref])
 
   return [ref, handleScroll]
 }

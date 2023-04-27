@@ -20,7 +20,22 @@ import { IntheboxImg } from '@/components/Imgs/IntheboxImg'
 import { useScrollTo } from '@/hooks'
 import { useRouter } from 'next/router'
 import BlockTag from '@/components/BlockTag'
-import Image from 'next/image'
+import B1Img from '@/imgs/b1'
+import B2Img from '@/imgs/b2'
+import B3Img from '@/imgs/b3'
+import B4Img from '@/imgs/b4'
+import B5Img from '@/imgs/b5'
+import B6Img from '@/imgs/b6'
+import B7Img from '@/imgs/b7'
+import B8Img from '@/imgs/b8'
+import B9Img from '@/imgs/b9'
+import P1Img from '@/imgs/p1'
+import P2Img from '@/imgs/p2'
+import P3Img from '@/imgs/p3'
+import P4Img from '@/imgs/p4'
+import B10Img from '@/imgs/b10'
+import B11Img from '@/imgs/b11'
+import B12Img from '@/imgs/b12'
 
 const DappImgContainer = styled.div`
   ${getResponsiveCss(
@@ -443,59 +458,18 @@ export default function Home() {
               fuel our growth.
             </p>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <Image
-                src="/b1.svg"
-                alt="Stratos Technologies logo"
-                width="221"
-                height="49"
-              />
-              <Image
-                src="/b2.svg"
-                alt="Noia Capital logo"
-                width="108"
-                height="91"
-              />
-              <Image src="/b3.svg" alt="Ubisoft logo" width="103" height="81" />
-              <Image src="/b4.svg" alt="Trgc logo" width="152" height="33" />
-              <Image
-                src="/b5.svg"
-                alt="Bitfwd Capital logo"
-                width="155"
-                height="51"
-              />
-
-              <Image
-                src="/b6.svg"
-                alt="rarestone logo"
-                width="162"
-                height="27"
-              />
-              <Image
-                src="/b7.svg"
-                alt="Zee Prime Capital logo"
-                width="74"
-                height="76"
-              />
-              <Image
-                src="/b8.svg"
-                alt="Winkrypto logo"
-                width="129"
-                height="22"
-              />
-              <Image src="/b9.svg" alt="Nzvc logo" width="58" height="58" />
-              <Image src="/b10.svg" alt="Th3ia logo" width="61" height="77" />
-              <Image
-                src="/b11.svg"
-                alt="Incuba Alpha logo"
-                width="84"
-                height="48"
-              />
-              <Image
-                src="/b12.svg"
-                alt="Token Ventures logo"
-                width="97"
-                height="67"
-              />
+              <B1Img />
+              <B2Img />
+              <B3Img />
+              <B4Img />
+              <B5Img />
+              <B6Img />
+              <B7Img />
+              <B8Img />
+              <B9Img />
+              <B10Img />
+              <B11Img />
+              <B12Img />
             </div>
           </div>
         </Container>
@@ -507,30 +481,10 @@ export default function Home() {
               Partners
             </H1>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <Image
-                src="/p1.svg"
-                alt="Noia Capital logo"
-                width="104"
-                height="81"
-              />
-              <Image
-                src="/p2.svg"
-                alt="Noia Capital logo"
-                width="185"
-                height="25"
-              />
-              <Image
-                src="/p3.svg"
-                alt="Noia Capital logo"
-                width="144"
-                height="26"
-              />
-              <Image
-                src="/p4.svg"
-                alt="Noia Capital logo"
-                width="157"
-                height="31"
-              />
+              <P1Img />
+              <P2Img />
+              <P3Img />
+              <P4Img />
             </div>
           </div>
         </Container>

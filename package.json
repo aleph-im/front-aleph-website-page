@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@aleph-front/aleph-core": "^1.0.6",
+    "@aleph-front/aleph-core": "^1.1.2",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "aleph-sdk-ts": "^3.4.3",
     "eslint": "8.35.0",

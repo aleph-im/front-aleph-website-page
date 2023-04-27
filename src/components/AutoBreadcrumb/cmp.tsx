@@ -4,12 +4,16 @@ import { Breadcrumb } from '@aleph-front/aleph-core'
 import Link from 'next/link'
 import { AutoBreacrumbProps } from './types'
 
-export default function AutoBreadcrumb({ name }: AutoBreacrumbProps) {
+export default function AutoBreadcrumb({
+  name,
+  includeHome = true,
+  ...rest
+}: AutoBreacrumbProps) {
   const router = useRouter()
   const capitalize = (s: string) => s.charAt(0).toUpperCase() + s.slice(1)
 
   const navLinks = useMemo(() => {
-    return router.pathname
+    const links = router.pathname
       .split('/')
       .filter((item) => item !== '')
       .map((item, index, ar) => {
@@ -25,7 +29,17 @@ export default function AutoBreadcrumb({ name }: AutoBreacrumbProps) {
           </Link>
         )
       })
-  }, [router.pathname, name])
 
-  return <Breadcrumb navLinks={navLinks} />
+    if (includeHome) {
+      links.unshift(
+        <Link key={'home'} href={'/'}>
+          {capitalize('home')}
+        </Link>,
+      )
+    }
+
+    return links
+  }, [router.pathname, includeHome, name])
+
+  return <Breadcrumb navLinks={navLinks} {...rest} />
 }

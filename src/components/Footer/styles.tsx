@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import tw from 'twin.macro'
 
 export const StyledFooter = styled.footer`
-  ${tw`py-12`}
+  ${tw`py-11`}
   background-color: #00000033;
   box-sizing: border-box;
   width: 100%;
@@ -17,11 +17,9 @@ export const StyledButton = styled(Button).attrs(() => {
     size: 'big',
   }
 })`
-  ${tw`mb-6`}
-  display: block;
-
+  ${tw`!mb-6 !block`}
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
   }
 `
 

@@ -216,7 +216,15 @@ export default function Home() {
                     <IntheboxImg />
                   </IntheboxImgContainer>
                 </div>
-                <Button color="main0" kind="neon" size="big" variant="primary">
+                <Button
+                  color="main0"
+                  kind="neon"
+                  size="big"
+                  variant="primary"
+                  as="a"
+                  target="_blank"
+                  href="https://console.aleph.im"
+                >
                   Launch Cloud dApp
                 </Button>
                 <Button

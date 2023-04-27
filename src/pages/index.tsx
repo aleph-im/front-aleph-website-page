@@ -163,7 +163,7 @@ export default function Home() {
               <Col xs={1} md={4}>
                 <H1 className="tp-h5 md:tp-h2" tw="mb-6 md:mb-16">
                   Keep your dApp running smoothly, thanks to our reliable web3
-                  cloud service
+                  cloud solution
                 </H1>
                 <p className="tp-body1 fs-sm md:fs-xl" tw="md:w-7/12 md:mb-20">
                   Access trusted off-chain data or computation within a couple

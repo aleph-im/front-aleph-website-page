@@ -1,4 +1,4 @@
-import { addClasses, Button, Navbar } from '@aleph-front/aleph-core'
+import { Button, Navbar } from '@aleph-front/aleph-core'
 import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
   /* background-color: #141327CC; */
 `
 
-export const StyledNavbar = styled(Navbar).attrs(addClasses('px-0'))`
+export const StyledNavbar = styled(Navbar)`
   position: relative;
 `
 

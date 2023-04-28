@@ -311,7 +311,7 @@ export default function Home() {
                 variant="primary"
                 size="big"
                 color="main0"
-                tw="!my-6 md:!my-0"
+                tw="!my-0"
               >
                 Get in touch with us
               </Button>

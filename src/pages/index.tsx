@@ -175,7 +175,7 @@ export default function Home() {
                   size="big"
                   items={[
                     { kind: 'check', title: 'Blockchain Agnostic' },
-                    { kind: 'check', title: 'Lightining Fast' },
+                    { kind: 'check', title: 'Lightning Fast' },
                     { kind: 'check', title: 'Low cost' },
                     { kind: 'check', title: 'Trustless' },
                   ]}
@@ -388,11 +388,6 @@ export default function Home() {
                     {
                       kind: 'warning',
                       title: 'Oracle Indexer',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Docker Image Support',
                       text: 'In progress',
                     },
                     {

@@ -154,7 +154,6 @@ export default function Home() {
         <title>Aleph.im</title>
         <meta name="description" content="Aleph.im" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <section tw="px-0 py-12 md:py-36">
         <Container>

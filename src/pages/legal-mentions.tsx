@@ -13,7 +13,6 @@ export default function LegalMentions() {
         <title>Aleph.im | Legal Mentions</title>
         <meta name="description" content="Aleph.im legal mentions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <section tw="px-0 pt-20 pb-0">
         <Container>

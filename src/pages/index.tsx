@@ -197,7 +197,7 @@ export default function Home() {
               </p>
               <p className="md:fs-md" tw="m-0 md:w-3/6 md:text-center">
                 Run your data storage and business logic on our unstoppable
-                decentralized network. Instead of a centralized service susch as
+                decentralized network. Instead of a centralized service such as
                 AWS or Google Cloud.
               </p>
             </div>
@@ -291,7 +291,7 @@ export default function Home() {
             </Col>
             <Col>
               <span className="tp-info" tw="mb-0">
-                SOLANA - ETHEREUM - BINANCE SMART CHAIN
+                SOLANA - ETHEREUM - BNB SMART CHAIN
               </span>
               <H2 className="tp-h4 md:tp-h3">Indexing framework</H2>
               <p className="fs-md" tw="mt-0 mb-16">

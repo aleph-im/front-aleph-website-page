@@ -197,7 +197,7 @@ export default function Home() {
               </p>
               <p className="md:fs-md" tw="m-0 md:w-3/6 md:text-center">
                 Run your data storage and business logic on our unstoppable
-                decentralized network. Instead of a centralized service susch as
+                decentralized network. Instead of a centralized service such as
                 AWS or Google Cloud.
               </p>
             </div>

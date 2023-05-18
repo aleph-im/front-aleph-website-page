@@ -17,7 +17,6 @@ export default function ImageCollection({
           : images.map((item, i) => (
               <img
                 key={i}
-                {...item}
                 src={
                   item.type == ImageType.strapi
                     ? getStrapiUploadsURL(item.src)

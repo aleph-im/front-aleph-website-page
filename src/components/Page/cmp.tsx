@@ -4,7 +4,6 @@ import Section from '@/components/Section'
 import Head from 'next/head'
 
 export const Page = ({ sections = [] }: PageProps) => {
-  console.log('sections', sections)
   return (
     <>
       <Head>

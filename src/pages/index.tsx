@@ -16,10 +16,14 @@ export const Home = ({ page }: HomeProps) => {
 }
 
 export async function getServerSideProps() {
-  const [page] = await getPages(5)
+  try {
+    const [page] = await getPages(5)
 
-  if (page) {
-    return { props: { page: page } }
+    if (page) {
+      return { props: { page: page } }
+    }
+  } catch (e) {
+    console.log('Error: ', e)
   }
 
   // Pass data to the page via props

@@ -1,4 +1,4 @@
-export const defaultStrapiURL = 'http://localhost:1337'
+export const defaultStrapiURL = 'https://cms.internal.aleph.im'
 export const defaultStrapiApiURL = defaultStrapiURL + '/api/'
 
 export const pagesApiName = 'pages'

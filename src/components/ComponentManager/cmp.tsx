@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { BulletList, Icon } from '@aleph-front/aleph-core'
+import { BulletList, Icon, Checkbox } from '@aleph-front/aleph-core'
 import { StrapiComponent } from '@/helpers/strapi/types'
 import { ComponentManagerProps } from '@/components/ComponentManager/types'
 
@@ -72,6 +72,9 @@ const getBlockComponent = ({ __component, ...rest }: any, index: number) => {
       break
     case 'generic.span':
       Component = Span
+      break
+    case 'generic.checkbox':
+      Component = Checkbox
       break
     case 'generic.sign-me-up-section':
       Component = SignMeUp

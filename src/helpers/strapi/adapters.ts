@@ -26,7 +26,7 @@ export const adaptComponent = (component: StrapiComponent) => {
     case 'generic.image':
       componentProps = {
         type: ImageType.strapi,
-        src: (component as StrapiImageComponent).image?.data.attributes.url,
+        src: (component as StrapiImageComponent).image.data.attributes.url,
         ...component,
       }
       break

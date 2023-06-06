@@ -1,9 +1,14 @@
 import E_ from '../errors'
-import {defaultStrapiApiURL, defaultStrapiURL, pagesApiName, sectionsApiName,} from '../constants'
-import {SectionProps} from '@/components/Section'
-import {PageProps} from '@/components/Page'
-import {StrapiPage, StrapiSection} from './types'
-import {adaptComponent} from '@/helpers/strapi/adapters'
+import {
+  defaultStrapiApiURL,
+  defaultStrapiURL,
+  pagesApiName,
+  sectionsApiName,
+} from '../constants'
+import { SectionProps } from '@/components/Section'
+import { PageProps } from '@/components/Page'
+import { StrapiPage, StrapiSection } from './types'
+import { adaptComponent } from '@/helpers/strapi/adapters'
 
 const queryParams = {
   populate: 'populate',
@@ -134,7 +139,7 @@ const dealPagesResponse = async (
   const result = []
   if (pages.length > 0) {
     for (const page of pages) {
-      const sectionIds = page.attributes.sections.data.map(
+      const sectionIds = page.attributes.sections?.data.map(
         (section) => section.id,
       )
       const sections = await getSections(sectionIds)
@@ -209,16 +214,16 @@ const dealSectionsResponse = (
   const sections = response.data
   return sections.length > 0
     ? sections.map((section) => {
-        const components = section.attributes.components.map((component) =>
+        const components = section.attributes.components?.map((component) =>
           adaptComponent(component),
         )
-        const components1 = section.attributes.components1.map((component) =>
+        const components1 = section.attributes.components1?.map((component) =>
           adaptComponent(component),
         )
-        const components2 = section.attributes.components2.map((component) =>
+        const components2 = section.attributes.components2?.map((component) =>
           adaptComponent(component),
         )
-        const components3 = section.attributes.components3.map((component) =>
+        const components3 = section.attributes.components3?.map((component) =>
           adaptComponent(component),
         )
         return {

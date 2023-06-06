@@ -143,6 +143,12 @@ export type StrapiIconComponent = StrapiBaseComponent & {
   styles: string
 }
 
+export type StrapiCheckboxComponent = StrapiBaseComponent & {
+  label: string
+  disabled: boolean
+  checked: boolean
+}
+
 export type StrapiComponent =
   | StrapiBaseComponent
   | StrapiH1Component
@@ -156,3 +162,4 @@ export type StrapiComponent =
   | StrapiBlockTagComponent
   | StrapiButtonComponent
   | StrapiIconComponent
+  | StrapiCheckboxComponent

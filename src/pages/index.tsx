@@ -361,13 +361,16 @@ export default function Home() {
                       text: 'Ethereum, Tezos, Solana',
                     },
                     {
-                      kind: 'warning',
+                      kind: 'success',
                       title: 'Cloud Managed UI',
-                      text: 'In progress',
+                    },
+                    {
+                      kind: 'success',
+                      title: 'Migrate CNN to Postgres',
                     },
                     {
                       kind: 'warning',
-                      title: 'Migrate CNN to Postgres',
+                      title: 'GPU support',
                       text: 'In progress',
                     },
                     {

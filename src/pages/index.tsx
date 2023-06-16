@@ -36,6 +36,7 @@ import P4Img from '@/components/Imgs/p4Img'
 import B10Img from '@/components/Imgs/b10Img'
 import B11Img from '@/components/Imgs/b11Img'
 import B12Img from '@/components/Imgs/b12Img'
+import AIImg from '@/components/Imgs/aiImg'
 
 const DappImgContainer = styled.div`
   ${getResponsiveCss(
@@ -183,6 +184,49 @@ export default function Home() {
               </Col>
             </Row>
           </div>
+        </Container>
+      </section>
+      <section
+        className="fx-noise-light"
+        tw="px-0 pt-20 pb-10 md:pb-20"
+        ref={ref3}
+      >
+        <Container>
+          <Row xs={1} md={2} gap="1.5rem">
+            <Col>
+              <AIImg />
+            </Col>
+            <Col>
+              <span className="tp-info" tw="mb-0">
+                EMPOWERING DECENTRALIZED AI WITH ALEPH.IM
+              </span>
+              <H2 className="tp-h4 md:tp-h3">
+                Libertai.io harnessing aleph.im&apos;s power for decentralized
+                AI
+              </H2>
+              <p className="fs-md" tw="mt-0 mb-16">
+                Join us at the intersection of AI and decentralization.
+                Libertai.io employs the strength of aleph.im&apos;s compute
+                nodes, giving life to a{' '}
+                <strong>fully decentralized, peer to peer AI</strong>. This
+                synergy allows for <strong>efficient computations</strong> while
+                ensuring <strong>data privacy</strong> and{' '}
+                <strong>system resilience</strong>.
+              </p>
+              <Button
+                forwardedAs="a"
+                href="https://libertai.io/"
+                target="_blank"
+                kind="neon"
+                variant="primary"
+                size="big"
+                color="main0"
+                tw="!my-0"
+              >
+                Explore the future of AI
+              </Button>
+            </Col>
+          </Row>
         </Container>
       </section>
       <section className="fx-noise-dark" tw="px-0 py-12" ref={ref1}>

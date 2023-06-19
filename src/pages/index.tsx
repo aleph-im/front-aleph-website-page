@@ -12,31 +12,12 @@ import {
   useResponsiveMin,
 } from '@aleph-front/aleph-core'
 import Container from '@/components/Container'
-import { IndexingImg } from '@/components/Imgs/IndexingImg'
 import H1 from '@/components/H1'
 import H2 from '@/components/H2'
-import { DappImg } from '@/components/Imgs/DappImg'
-import { IntheboxImg } from '@/components/Imgs/IntheboxImg'
 import { useScrollTo } from '@/hooks'
 import { useRouter } from 'next/router'
 import BlockTag from '@/components/BlockTag'
-import B1Img from '@/components/Imgs/b1Img'
-import B2Img from '@/components/Imgs/b2Img'
-import B3Img from '@/components/Imgs/b3Img'
-import B4Img from '@/components/Imgs/b4Img'
-import B5Img from '@/components/Imgs/b5Img'
-import B6Img from '@/components/Imgs/b6Img'
-import B7Img from '@/components/Imgs/b7Img'
-import B8Img from '@/components/Imgs/b8Img'
-import B9Img from '@/components/Imgs/b9Img'
-import P1Img from '@/components/Imgs/p1Img'
-import P2Img from '@/components/Imgs/p2Img'
-import P3Img from '@/components/Imgs/p3Img'
-import P4Img from '@/components/Imgs/p4Img'
-import B10Img from '@/components/Imgs/b10Img'
-import B11Img from '@/components/Imgs/b11Img'
-import B12Img from '@/components/Imgs/b12Img'
-import AIImg from '@/components/Imgs/aiImg'
+import Image from 'next/image'
 
 const DappImgContainer = styled.div`
   ${getResponsiveCss(
@@ -170,7 +151,12 @@ export default function Home() {
                   lines of code
                 </p>
                 <DappImgContainer tw="py-12 md:py-0">
-                  <DappImg />
+                  <Image
+                    src="/img/dapp.svg"
+                    alt="DApp illustration"
+                    fill={true}
+                    tw="relative!"
+                  />
                 </DappImgContainer>
                 <BulletList
                   size="big"
@@ -194,7 +180,12 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <AIImg />
+              <Image
+                src="/img/ai.svg"
+                alt="AI illustration"
+                fill={true}
+                tw="relative!"
+              />
             </Col>
             <Col>
               <span className="tp-info" tw="mb-0">
@@ -271,7 +262,12 @@ export default function Home() {
               <div tw="py-20 px-7 md:py-8 md:px-0 2xl:px-8 flex flex-col items-center">
                 <div tw="w-4/6 max-w-[380px] md:w-full mb-24">
                   <IntheboxImgContainer>
-                    <IntheboxImg />
+                    <Image
+                      src="/img/inthebox.svg"
+                      alt="In the box illustration"
+                      fill={true}
+                      tw="relative!"
+                    />
                   </IntheboxImgContainer>
                 </div>
                 <Button
@@ -331,7 +327,12 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <IndexingImg />
+              <Image
+                src="/img/indexing.svg"
+                alt="Indexing illustration"
+                fill={true}
+                tw="relative!"
+              />
             </Col>
             <Col>
               <span className="tp-info" tw="mb-0">
@@ -499,18 +500,78 @@ export default function Home() {
               fuel our growth.
             </p>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <B1Img />
-              <B2Img />
-              <B3Img />
-              <B4Img />
-              <B5Img />
-              <B6Img />
-              <B7Img />
-              <B8Img />
-              <B9Img />
-              <B10Img />
-              <B11Img />
-              <B12Img />
+              <Image
+                src="/img/backed/b1.svg"
+                alt="Stratos Technologies"
+                width={221}
+                height={49}
+              />
+              <Image
+                src="/img/backed/b2.svg"
+                alt="Noia Capital"
+                width={108}
+                height={91}
+              />
+              <Image
+                src="/img/backed/b3.svg"
+                alt="Ubisoft"
+                width={103}
+                height={81}
+              />
+              <Image
+                src="/img/backed/b4.svg"
+                alt="TRGC"
+                width={152}
+                height={33}
+              />
+              <Image
+                src="/img/backed/b5.svg"
+                alt="Bitfwd Capital"
+                width={155}
+                height={51}
+              />
+              <Image
+                src="/img/backed/b6.svg"
+                alt="Rarestone"
+                width={162}
+                height={27}
+              />
+              <Image
+                src="/img/backed/b7.svg"
+                alt="Zee Prime Capital"
+                width={74}
+                height={76}
+              />
+              <Image
+                src="/img/backed/b8.svg"
+                alt="Winkrypto"
+                width={129}
+                height={22}
+              />
+              <Image
+                src="/img/backed/b9.svg"
+                alt="NZVC"
+                width={58}
+                height={58}
+              />
+              <Image
+                src="/img/backed/b10.svg"
+                alt="Th3ia"
+                width={61}
+                height={77}
+              />
+              <Image
+                src="/img/backed/b11.svg"
+                alt="Incuba Alpha"
+                width={84}
+                height={48}
+              />
+              <Image
+                src="/img/backed/b12.svg"
+                alt="Token Ventures"
+                width={97}
+                height={67}
+              />
             </div>
           </div>
         </Container>
@@ -522,10 +583,30 @@ export default function Home() {
               Partners
             </H1>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <P1Img />
-              <P2Img />
-              <P3Img />
-              <P4Img />
+              <Image
+                src="/img/partner/p1.svg"
+                alt="Ubisoft"
+                width={104}
+                height={81}
+              />
+              <Image
+                src="/img/partner/p2.svg"
+                alt="Synaps"
+                width={185}
+                height={25}
+              />
+              <Image
+                src="/img/partner/p3.svg"
+                alt="Anima"
+                width={144}
+                height={26}
+              />
+              <Image
+                src="/img/partner/p4.svg"
+                alt="Request"
+                width={157}
+                height={31}
+              />
             </div>
           </div>
         </Container>

@@ -4,7 +4,7 @@ const withTwin = require('./withTwin.js')
 const isGithubActions = process.env.IS_GH_PAGES || false
 
 let assetPrefix = ''
-let basePath = ''
+let basePath = process.env.NEXTJS_BASEPATH || ''
 
 if (isGithubActions) {
   // trim off `<owner>/`
@@ -12,6 +12,8 @@ if (isGithubActions) {
 
   assetPrefix = `/${repo}/`
   basePath = `/${repo}`
+
+  process.env.NEXTJS_BASEPATH = basePath
 }
 
 /** @type {import('next').NextConfig} */

@@ -17,7 +17,6 @@ import H2 from '@/components/H2'
 import { useScrollTo } from '@/hooks'
 import { useRouter } from 'next/router'
 import BlockTag from '@/components/BlockTag'
-import Image from 'next/image'
 import { basePath } from '@/config'
 
 const DappImgContainer = styled.div`
@@ -152,11 +151,10 @@ export default function Home() {
                   lines of code
                 </p>
                 <DappImgContainer tw="py-12 md:py-0">
-                  <Image
+                  <img
                     src={`${basePath}/img/dapp.svg`}
                     alt="DApp illustration"
-                    fill={true}
-                    tw="relative!"
+                    tw="w-full h-full"
                   />
                 </DappImgContainer>
                 <BulletList
@@ -181,11 +179,10 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <Image
+              <img
                 src={`${basePath}/img/ai.svg`}
                 alt="AI illustration"
-                fill={true}
-                tw="relative!"
+                tw="w-full h-full"
               />
             </Col>
             <Col>
@@ -263,11 +260,10 @@ export default function Home() {
               <div tw="py-20 px-7 md:py-8 md:px-0 2xl:px-8 flex flex-col items-center">
                 <div tw="w-4/6 max-w-[380px] md:w-full mb-24">
                   <IntheboxImgContainer>
-                    <Image
+                    <img
                       src={`${basePath}/img/inthebox.svg`}
                       alt="In the box illustration"
-                      fill={true}
-                      tw="relative!"
+                      tw="w-full h-full"
                     />
                   </IntheboxImgContainer>
                 </div>
@@ -328,11 +324,10 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <Image
+              <img
                 src={`${basePath}/img/indexing.svg`}
                 alt="Indexing illustration"
-                fill={true}
-                tw="relative!"
+                tw="w-full h-full"
               />
             </Col>
             <Col>
@@ -441,7 +436,7 @@ export default function Home() {
                     },
                     {
                       kind: 'warning',
-                      title: 'Docker Image Support',
+                      title: 'Docker img Support',
                       text: 'In progress',
                     },
                     {
@@ -501,77 +496,26 @@ export default function Home() {
               fuel our growth.
             </p>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <Image
+              <img
                 src={`${basePath}/img/backed/b1.svg`}
                 alt="Stratos Technologies"
-                width={221}
-                height={49}
               />
-              <Image
-                src={`${basePath}/img/backed/b2.svg`}
-                alt="Noia Capital"
-                width={108}
-                height={91}
-              />
-              <Image
-                src={`${basePath}/img/backed/b3.svg`}
-                alt="Ubisoft"
-                width={103}
-                height={81}
-              />
-              <Image
-                src={`${basePath}/img/backed/b4.svg`}
-                alt="TRGC"
-                width={152}
-                height={33}
-              />
-              <Image
-                src={`${basePath}/img/backed/b5.svg`}
-                alt="Bitfwd Capital"
-                width={155}
-                height={51}
-              />
-              <Image
-                src={`${basePath}/img/backed/b6.svg`}
-                alt="Rarestone"
-                width={162}
-                height={27}
-              />
-              <Image
+              <img src={`${basePath}/img/backed/b2.svg`} alt="Noia Capital" />
+              <img src={`${basePath}/img/backed/b3.svg`} alt="Ubisoft" />
+              <img src={`${basePath}/img/backed/b4.svg`} alt="TRGC" />
+              <img src={`${basePath}/img/backed/b5.svg`} alt="Bitfwd Capital" />
+              <img src={`${basePath}/img/backed/b6.svg`} alt="Rarestone" />
+              <img
                 src={`${basePath}/img/backed/b7.svg`}
                 alt="Zee Prime Capital"
-                width={74}
-                height={76}
               />
-              <Image
-                src={`${basePath}/img/backed/b8.svg`}
-                alt="Winkrypto"
-                width={129}
-                height={22}
-              />
-              <Image
-                src={`${basePath}/img/backed/b9.svg`}
-                alt="NZVC"
-                width={58}
-                height={58}
-              />
-              <Image
-                src={`${basePath}/img/backed/b10.svg`}
-                alt="Th3ia"
-                width={61}
-                height={77}
-              />
-              <Image
-                src={`${basePath}/img/backed/b11.svg`}
-                alt="Incuba Alpha"
-                width={84}
-                height={48}
-              />
-              <Image
+              <img src={`${basePath}/img/backed/b8.svg`} alt="Winkrypto" />
+              <img src={`${basePath}/img/backed/b9.svg`} alt="NZVC" />
+              <img src={`${basePath}/img/backed/b10.svg`} alt="Th3ia" />
+              <img src={`${basePath}/img/backed/b11.svg`} alt="Incuba Alpha" />
+              <img
                 src={`${basePath}/img/backed/b12.svg`}
                 alt="Token Ventures"
-                width={97}
-                height={67}
               />
             </div>
           </div>
@@ -584,30 +528,10 @@ export default function Home() {
               Partners
             </H1>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <Image
-                src={`${basePath}/img/partner/p1.svg`}
-                alt="Ubisoft"
-                width={104}
-                height={81}
-              />
-              <Image
-                src={`${basePath}/img/partner/p2.svg`}
-                alt="Synaps"
-                width={185}
-                height={25}
-              />
-              <Image
-                src={`${basePath}/img/partner/p3.svg`}
-                alt="Anima"
-                width={144}
-                height={26}
-              />
-              <Image
-                src={`${basePath}/img/partner/p4.svg`}
-                alt="Request"
-                width={157}
-                height={31}
-              />
+              <img src={`${basePath}/img/partner/p1.svg`} alt="Ubisoft" />
+              <img src={`${basePath}/img/partner/p2.svg`} alt="Synaps" />
+              <img src={`${basePath}/img/partner/p3.svg`} alt="Anima" />
+              <img src={`${basePath}/img/partner/p4.svg`} alt="Request" />
             </div>
           </div>
         </Container>

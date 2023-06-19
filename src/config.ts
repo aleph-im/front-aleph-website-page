@@ -1,1 +1,1 @@
-export const basePath = process.env.NEXTJS_BASEPATH
+export const basePath = process.env.NEXTJS_BASEPATH || ''

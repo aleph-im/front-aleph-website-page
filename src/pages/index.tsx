@@ -17,7 +17,7 @@ import H2 from '@/components/H2'
 import { useScrollTo } from '@/hooks'
 import { useRouter } from 'next/router'
 import BlockTag from '@/components/BlockTag'
-import { basePath } from '@/config'
+import { useBasePath } from '@/hooks/useBasePath'
 
 const DappImgContainer = styled.div`
   ${getResponsiveCss(
@@ -112,6 +112,9 @@ export default function Home() {
   const [ref2, handleScroll2] = useScrollTo()
   const [ref3, handleScroll3] = useScrollTo()
 
+  const basePath = useBasePath()
+  const imgPrefix = basePath?.charAt(0) === '/' ? basePath : ''
+
   const { asPath } = useRouter()
 
   useEffect(() => {
@@ -152,7 +155,7 @@ export default function Home() {
                 </p>
                 <DappImgContainer tw="py-12 md:py-0">
                   <img
-                    src={`${basePath}/img/dapp.svg`}
+                    src={`${imgPrefix}/img/dapp.svg`}
                     alt="DApp illustration"
                     tw="w-full h-full"
                   />
@@ -180,7 +183,7 @@ export default function Home() {
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
               <img
-                src={`${basePath}/img/ai.svg`}
+                src={`${imgPrefix}/img/ai.svg`}
                 alt="AI illustration"
                 tw="w-full h-full"
               />
@@ -261,7 +264,7 @@ export default function Home() {
                 <div tw="w-4/6 max-w-[380px] md:w-full mb-24">
                   <IntheboxImgContainer>
                     <img
-                      src={`${basePath}/img/inthebox.svg`}
+                      src={`${imgPrefix}/img/inthebox.svg`}
                       alt="In the box illustration"
                       tw="w-full h-full"
                     />
@@ -325,7 +328,7 @@ export default function Home() {
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
               <img
-                src={`${basePath}/img/indexing.svg`}
+                src={`${imgPrefix}/img/indexing.svg`}
                 alt="Indexing illustration"
                 tw="w-full h-full"
               />
@@ -497,24 +500,27 @@ export default function Home() {
             </p>
             <div tw="flex items-center justify-center flex-wrap gap-16">
               <img
-                src={`${basePath}/img/backed/b1.svg`}
+                src={`${imgPrefix}/img/backed/b1.svg`}
                 alt="Stratos Technologies"
               />
-              <img src={`${basePath}/img/backed/b2.svg`} alt="Noia Capital" />
-              <img src={`${basePath}/img/backed/b3.svg`} alt="Ubisoft" />
-              <img src={`${basePath}/img/backed/b4.svg`} alt="TRGC" />
-              <img src={`${basePath}/img/backed/b5.svg`} alt="Bitfwd Capital" />
-              <img src={`${basePath}/img/backed/b6.svg`} alt="Rarestone" />
+              <img src={`${imgPrefix}/img/backed/b2.svg`} alt="Noia Capital" />
+              <img src={`${imgPrefix}/img/backed/b3.svg`} alt="Ubisoft" />
+              <img src={`${imgPrefix}/img/backed/b4.svg`} alt="TRGC" />
               <img
-                src={`${basePath}/img/backed/b7.svg`}
+                src={`${imgPrefix}/img/backed/b5.svg`}
+                alt="Bitfwd Capital"
+              />
+              <img src={`${imgPrefix}/img/backed/b6.svg`} alt="Rarestone" />
+              <img
+                src={`${imgPrefix}/img/backed/b7.svg`}
                 alt="Zee Prime Capital"
               />
-              <img src={`${basePath}/img/backed/b8.svg`} alt="Winkrypto" />
-              <img src={`${basePath}/img/backed/b9.svg`} alt="NZVC" />
-              <img src={`${basePath}/img/backed/b10.svg`} alt="Th3ia" />
-              <img src={`${basePath}/img/backed/b11.svg`} alt="Incuba Alpha" />
+              <img src={`${imgPrefix}/img/backed/b8.svg`} alt="Winkrypto" />
+              <img src={`${imgPrefix}/img/backed/b9.svg`} alt="NZVC" />
+              <img src={`${imgPrefix}/img/backed/b10.svg`} alt="Th3ia" />
+              <img src={`${imgPrefix}/img/backed/b11.svg`} alt="Incuba Alpha" />
               <img
-                src={`${basePath}/img/backed/b12.svg`}
+                src={`${imgPrefix}/img/backed/b12.svg`}
                 alt="Token Ventures"
               />
             </div>
@@ -528,10 +534,10 @@ export default function Home() {
               Partners
             </H1>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <img src={`${basePath}/img/partner/p1.svg`} alt="Ubisoft" />
-              <img src={`${basePath}/img/partner/p2.svg`} alt="Synaps" />
-              <img src={`${basePath}/img/partner/p3.svg`} alt="Anima" />
-              <img src={`${basePath}/img/partner/p4.svg`} alt="Request" />
+              <img src={`${imgPrefix}/img/partner/p1.svg`} alt="Ubisoft" />
+              <img src={`${imgPrefix}/img/partner/p2.svg`} alt="Synaps" />
+              <img src={`${imgPrefix}/img/partner/p3.svg`} alt="Anima" />
+              <img src={`${imgPrefix}/img/partner/p4.svg`} alt="Request" />
             </div>
           </div>
         </Container>

@@ -160,6 +160,7 @@ export default function Home() {
                     alt="DApp illustration"
                     fill={true}
                     tw="relative!"
+                    priority={true}
                   />
                 </DappImgContainer>
                 <BulletList

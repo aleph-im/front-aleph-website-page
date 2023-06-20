@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
+import Image from 'next/image'
 import styled, { css } from 'styled-components'
 import {
   Button,
@@ -154,10 +155,11 @@ export default function Home() {
                   lines of code
                 </p>
                 <DappImgContainer tw="py-12 md:py-0">
-                  <img
+                  <Image
                     src={`${imgPrefix}/img/dapp.svg`}
                     alt="DApp illustration"
-                    tw="w-full h-full"
+                    fill={true}
+                    tw="relative!"
                   />
                 </DappImgContainer>
                 <BulletList
@@ -182,10 +184,11 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <img
+              <Image
                 src={`${imgPrefix}/img/ai.svg`}
                 alt="AI illustration"
-                tw="w-full h-full"
+                fill={true}
+                tw="relative!"
               />
             </Col>
             <Col>
@@ -263,10 +266,11 @@ export default function Home() {
               <div tw="py-20 px-7 md:py-8 md:px-0 2xl:px-8 flex flex-col items-center">
                 <div tw="w-4/6 max-w-[380px] md:w-full mb-24">
                   <IntheboxImgContainer>
-                    <img
+                    <Image
                       src={`${imgPrefix}/img/inthebox.svg`}
                       alt="In the box illustration"
-                      tw="w-full h-full"
+                      fill={true}
+                      tw="relative!"
                     />
                   </IntheboxImgContainer>
                 </div>
@@ -327,10 +331,11 @@ export default function Home() {
         <Container>
           <Row xs={1} md={2} gap="1.5rem">
             <Col>
-              <img
+              <Image
                 src={`${imgPrefix}/img/indexing.svg`}
                 alt="Indexing illustration"
-                tw="w-full h-full"
+                fill={true}
+                tw="relative!"
               />
             </Col>
             <Col>
@@ -499,28 +504,76 @@ export default function Home() {
               fuel our growth.
             </p>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <img
+              <Image
                 src={`${imgPrefix}/img/backed/b1.svg`}
+                width={221}
+                height={49}
                 alt="Stratos Technologies"
               />
-              <img src={`${imgPrefix}/img/backed/b2.svg`} alt="Noia Capital" />
-              <img src={`${imgPrefix}/img/backed/b3.svg`} alt="Ubisoft" />
-              <img src={`${imgPrefix}/img/backed/b4.svg`} alt="TRGC" />
-              <img
+              <Image
+                src={`${imgPrefix}/img/backed/b2.svg`}
+                width={108}
+                height={91}
+                alt="Noia Capital"
+              />
+              <Image
+                src={`${imgPrefix}/img/backed/b3.svg`}
+                width={103}
+                height={81}
+                alt="Ubisoft"
+              />
+              <Image
+                src={`${imgPrefix}/img/backed/b4.svg`}
+                width={152}
+                height={33}
+                alt="TRGC"
+              />
+              <Image
                 src={`${imgPrefix}/img/backed/b5.svg`}
+                width={155}
+                height={51}
                 alt="Bitfwd Capital"
               />
-              <img src={`${imgPrefix}/img/backed/b6.svg`} alt="Rarestone" />
-              <img
+              <Image
+                src={`${imgPrefix}/img/backed/b6.svg`}
+                width={162}
+                height={27}
+                alt="Rarestone"
+              />
+              <Image
                 src={`${imgPrefix}/img/backed/b7.svg`}
+                width={74}
+                height={76}
                 alt="Zee Prime Capital"
               />
-              <img src={`${imgPrefix}/img/backed/b8.svg`} alt="Winkrypto" />
-              <img src={`${imgPrefix}/img/backed/b9.svg`} alt="NZVC" />
-              <img src={`${imgPrefix}/img/backed/b10.svg`} alt="Th3ia" />
-              <img src={`${imgPrefix}/img/backed/b11.svg`} alt="Incuba Alpha" />
-              <img
+              <Image
+                src={`${imgPrefix}/img/backed/b8.svg`}
+                width={129}
+                height={22}
+                alt="Winkrypto"
+              />
+              <Image
+                src={`${imgPrefix}/img/backed/b9.svg`}
+                width={58}
+                height={58}
+                alt="NZVC"
+              />
+              <Image
+                src={`${imgPrefix}/img/backed/b10.svg`}
+                width={61}
+                height={77}
+                alt="Th3ia"
+              />
+              <Image
+                src={`${imgPrefix}/img/backed/b11.svg`}
+                width={84}
+                height={48}
+                alt="Incuba Alpha"
+              />
+              <Image
                 src={`${imgPrefix}/img/backed/b12.svg`}
+                width={97}
+                height={67}
                 alt="Token Ventures"
               />
             </div>
@@ -534,10 +587,30 @@ export default function Home() {
               Partners
             </H1>
             <div tw="flex items-center justify-center flex-wrap gap-16">
-              <img src={`${imgPrefix}/img/partner/p1.svg`} alt="Ubisoft" />
-              <img src={`${imgPrefix}/img/partner/p2.svg`} alt="Synaps" />
-              <img src={`${imgPrefix}/img/partner/p3.svg`} alt="Anima" />
-              <img src={`${imgPrefix}/img/partner/p4.svg`} alt="Request" />
+              <Image
+                src={`${imgPrefix}/img/partner/p1.svg`}
+                width={104}
+                height={81}
+                alt="Ubisoft"
+              />
+              <Image
+                src={`${imgPrefix}/img/partner/p2.svg`}
+                width={185}
+                height={25}
+                alt="Synaps"
+              />
+              <Image
+                src={`${imgPrefix}/img/partner/p3.svg`}
+                width={144}
+                height={26}
+                alt="Anima"
+              />
+              <Image
+                src={`${imgPrefix}/img/partner/p4.svg`}
+                width={157}
+                height={31}
+                alt="Request"
+              />
             </div>
           </div>
         </Container>

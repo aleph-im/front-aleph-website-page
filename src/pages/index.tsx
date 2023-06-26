@@ -416,7 +416,7 @@ export default function Home() {
                     },
                     {
                       kind: 'success',
-                      title: 'Migrate CNN to Postgres',
+                      title: 'Migrate CCN to Postgres',
                     },
                     {
                       kind: 'warning',

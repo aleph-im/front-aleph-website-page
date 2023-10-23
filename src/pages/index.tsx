@@ -150,7 +150,7 @@ export default function Home() {
                   Keep your dApp running smoothly, thanks to our reliable web3
                   cloud solution
                 </H1>
-                <p className="tp-body1 fs-sm md:fs-xl" tw="md:w-7/12 md:mb-20">
+                <p className="tp-body1 fs-16 md:fs-28" tw="md:w-7/12 md:mb-20">
                   Access trusted off-chain data or computation within a couple
                   lines of code
                 </p>
@@ -200,7 +200,7 @@ export default function Home() {
                 Libertai.io harnessing aleph.im&apos;s power for decentralized
                 AI
               </H2>
-              <p className="fs-md" tw="mt-0 mb-16">
+              <p className="fs-18" tw="mt-0 mb-16">
                 Join us at the intersection of AI and decentralization.
                 Libertai.io employs the strength of aleph.im&apos;s compute
                 nodes, giving life to a{' '}
@@ -235,7 +235,7 @@ export default function Home() {
               <p className="tp-h7 text-base0" tw="mt-0 mb-6 ">
                 Build DApps without any centralized components
               </p>
-              <p className="md:fs-md" tw="m-0 md:w-3/6 md:text-center">
+              <p className="md:fs-18" tw="m-0 md:w-3/6 md:text-center">
                 Run your data storage and business logic on our unstoppable
                 decentralized network. Instead of a centralized service such as
                 AWS or Google Cloud.
@@ -306,7 +306,7 @@ export default function Home() {
                 <H2 tw="mb-6" type="h5">
                   Storage solutions
                 </H2>
-                <p className="fs-md" tw="mt-0 mb-12 text-center md:w-4/6">
+                <p className="fs-18" tw="mt-0 mb-12 text-center md:w-4/6">
                   Combo core channel node storage resource node (SRN launch
                   Q3/2023)
                 </p>
@@ -344,7 +344,7 @@ export default function Home() {
                 SOLANA - ETHEREUM - BNB SMART CHAIN
               </span>
               <H2 className="tp-h4 md:tp-h3">Indexing framework</H2>
-              <p className="fs-md" tw="mt-0 mb-16">
+              <p className="fs-18" tw="mt-0 mb-16">
                 Consider using the Aleph Indexer Framework for indexing
                 blockchain data. It&apos;s <strong>open-source</strong>,{' '}
                 <strong>multi-chain</strong>, and provides an easy-to-use
@@ -377,7 +377,7 @@ export default function Home() {
             <p className="text-base0 tp-h7" tw="mt-0 mb-6 ">
               Charting the Course to a Decentralized Future
             </p>
-            <p className="fs-md" tw="m-0 md:w-4/6 md:text-center">
+            <p className="fs-18" tw="m-0 md:w-4/6 md:text-center">
               Discover the exciting future of aleph.im with our comprehensive
               roadmap. Explore the innovative features we have planned for 2023
               and 2024 to continue revolutionizing the decentralized cloud
@@ -390,7 +390,7 @@ export default function Home() {
                 <H2 tw="mb-6 mx-auto" type="h3" color="base0">
                   2023
                 </H2>
-                <p className="fs-md" tw="mt-0 mb-12">
+                <p className="fs-18" tw="mt-0 mb-12">
                   In 2023, aleph.im is focused on enhancing user experience,
                   scalability, and security. Our team is working to deliver
                   cutting-edge solutions that will empower businesses and
@@ -465,7 +465,7 @@ export default function Home() {
                 <H2 tw="mb-6 mx-auto" type="h3" color="base0">
                   2024
                 </H2>
-                <p className="fs-md" tw="mt-0 mb-12">
+                <p className="fs-18" tw="mt-0 mb-12">
                   As we move into 2024, our vision for aleph.im expands to
                   integrate next-generation technologies and drive industry-wide
                   adoption. Emphasising on interoperability, collaboration, and
@@ -500,7 +500,7 @@ export default function Home() {
             <H1 color="base0" type="h3" tw="mb-4">
               Backed by
             </H1>
-            <p className="fs-md" tw="mb-16 md:mb-6">
+            <p className="fs-18" tw="mb-16 md:mb-6">
               Our dedicated backers and investors who believe in our mission and
               fuel our growth.
             </p>
@@ -623,7 +623,7 @@ export default function Home() {
               <H1 color="base0" type="h3" tw="mb-6">
                 Get the latest updates
               </H1>
-              <p className="fs-md text-base0" tw="mt-0 mb-4">
+              <p className="fs-18 text-base0" tw="mt-0 mb-4">
                 Be the first to know about new launches
               </p>
               <SignMeUpForm />

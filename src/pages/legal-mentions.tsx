@@ -31,13 +31,13 @@ export default function LegalMentions() {
                   <H2 type="h7" color="base0" tw="mb-6">
                     Company
                   </H2>
-                  <p className="fs-md">
+                  <p className="fs-18">
                     Aleph.im SASU <br />
                     242 Boulevard Voltaire <br />
                     75011 Paris <br />
                     France
                   </p>
-                  <p className="tp-body1 fs-xs">
+                  <p className="tp-body1 fs-10">
                     The company is listed on the Paris Companies Register under
                     the following number 882 412 869 RCS Paris (Code APE 6202 A
                     - Conseil en systèmes et logiciels informatiques)
@@ -47,7 +47,7 @@ export default function LegalMentions() {
                   <H2 type="h7" color="base0" tw="mb-6">
                     Responsible publisher
                   </H2>
-                  <p className="fs-md">
+                  <p className="fs-18">
                     242 Boulevard Voltaire <br />
                     75011 Paris <br />
                     France <br />
@@ -57,7 +57,7 @@ export default function LegalMentions() {
                   <H2 type="h7" color="base0" tw="mb-6">
                     Web hosting
                   </H2>
-                  <p className="fs-md">
+                  <p className="fs-18">
                     SCALEWAY SAS <br />
                     BP 438 <br />
                     75366 PARIS <br />

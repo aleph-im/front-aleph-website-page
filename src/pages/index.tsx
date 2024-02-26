@@ -419,43 +419,16 @@ export default function Home() {
                       title: 'Migrate CCN to Postgres',
                     },
                     {
-                      kind: 'warning',
-                      title: 'GPU support',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Secret Management in Virtual Machines',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Decentralized Network Health Status Page',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Storage Resource Nodes',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Oracle Indexer',
-                      text: 'In progress',
-                    },
-                    {
-                      kind: 'warning',
-                      title: 'Docker img Support',
-                      text: 'In progress',
+                      kind: 'success',
+                      title: 'Reverse Oracle',
                     },
                     {
                       kind: 'check',
-                      title: 'Custom Domain Resolution on Load Balancers',
+                      title: 'Storage Resource Nodes',
+                      text: 'In progress',
                     },
                     { kind: 'check', title: 'Decentralized Load Balancer' },
                     { kind: 'check', title: 'Reproducible Virtual Machines' },
-                    { kind: 'check', title: 'IPFS on VM executors' },
-                    { kind: 'check', title: '...' },
                   ]}
                 />
               </div>
@@ -468,25 +441,74 @@ export default function Home() {
                 <p className="fs-18" tw="mt-0 mb-12">
                   As we move into 2024, our vision for aleph.im expands to
                   integrate next-generation technologies and drive industry-wide
-                  adoption. Emphasising on interoperability, collaboration, and
-                  sustainability, we are committed to paving the way for a truly
-                  decentralized future.
+                  adoption on computing and AI. Emphasising on composability,
+                  collaboration, and sustainability, we are committed to paving
+                  the way for a truly decentralized future.
                 </p>
                 <BulletList
                   size="regular"
                   items={[
-                    { kind: 'check', title: 'Clustered Resource Nodes' },
+                    {
+                      kind: 'success',
+                      title: 'Pay-as-you-go (Alpha)',
+                      text: 'Avalanche (Superfluid)',
+                    },
+                    {
+                      kind: 'success',
+                      title: 'Twentysix.cloud',
+                      text: 'Web3 Cloud',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'Docker Image Support',
+                      text: 'In progress',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'GPU support for Virtual Machines',
+                      text: 'In progress',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'Oracles',
+                      text: 'In progress',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'Confidential Virtual Machines',
+                      text: 'In progress',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'Instance Snapshots',
+                      text: 'In progress',
+                    },
+                    {
+                      kind: 'warning',
+                      title: 'Pay-as-you-go (Mainnet)',
+                      text: 'New EVM chains support',
+                    },
+                    {
+                      kind: 'check',
+                      title: 'IPFS on Virtual Machines Executors',
+                    },
                     {
                       kind: 'check',
                       title:
-                        'GeoLocalisation for Storage and Compute Resource Nodes',
+                        'Geolocation for Storage and Compute Resource Nodes',
                     },
                     {
                       kind: 'check',
-                      title: 'Decentralized Layer 7 Security',
+                      title: 'Storage Resource Nodes',
                     },
-                    { kind: 'check', title: 'Resources Marketplace' },
-                    { kind: 'check', title: 'Decentralized Proxy / VPN' },
+                    {
+                      kind: 'check',
+                      title: 'Decentralized Load Balancer',
+                    },
+                    {
+                      kind: 'check',
+                      title: 'Reproducible Virtual Machines',
+                    },
                   ]}
                 />
               </div>

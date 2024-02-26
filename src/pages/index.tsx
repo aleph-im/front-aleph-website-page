@@ -282,9 +282,9 @@ export default function Home() {
                   variant="primary"
                   as="a"
                   target="_blank"
-                  href="https://console.aleph.im"
+                  href="https://account.aleph.im"
                 >
-                  Launch Cloud dApp
+                  Launch Account dApp
                 </Button>
                 <Button
                   forwardedAs="a"

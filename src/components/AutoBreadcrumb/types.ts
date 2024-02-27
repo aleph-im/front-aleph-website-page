@@ -1,4 +1,4 @@
-import { BreadcrumbProps } from '@aleph-front/aleph-core'
+import { BreadcrumbProps } from '@aleph-front/core'
 import { HTMLAttributes } from 'react'
 
 export type AutoBreacrumbProps = HTMLAttributes<HTMLElement> &

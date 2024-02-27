@@ -4,7 +4,7 @@ import AutoBreadcrumb from '@/components/AutoBreadcrumb/cmp'
 import Container from '@/components/Container/cmp'
 import H1 from '@/components/H1/cmp'
 import H2 from '@/components/H2/cmp'
-import { Col, Row } from '@aleph-front/aleph-core'
+import { Col, Row } from '@aleph-front/core'
 
 export default function LegalMentions() {
   return (

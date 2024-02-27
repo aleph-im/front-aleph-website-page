@@ -11,7 +11,7 @@ import {
   getResponsiveCss,
   TextInput,
   useResponsiveMin,
-} from '@aleph-front/aleph-core'
+} from '@aleph-front/core'
 import Container from '@/components/Container'
 import H1 from '@/components/H1'
 import H2 from '@/components/H2'
@@ -49,7 +49,7 @@ const SignMeUpButton = () => (
     id="mc-embedded-subscribe"
     color="main0"
     kind="neon"
-    size="big"
+    size="lg"
     variant="primary"
     tw="!block !mx-auto"
   >
@@ -166,10 +166,10 @@ export default function Home() {
                 <BulletList
                   size="big"
                   items={[
-                    { kind: 'check', title: 'Blockchain Agnostic' },
-                    { kind: 'check', title: 'Lightning Fast' },
-                    { kind: 'check', title: 'Low cost' },
-                    { kind: 'check', title: 'Trustless' },
+                    { kind: 'info', title: 'Blockchain Agnostic' },
+                    { kind: 'info', title: 'Lightning Fast' },
+                    { kind: 'info', title: 'Low cost' },
+                    { kind: 'info', title: 'Trustless' },
                   ]}
                 />
               </Col>
@@ -215,7 +215,7 @@ export default function Home() {
                 target="_blank"
                 kind="neon"
                 variant="primary"
-                size="big"
+                size="lg"
                 color="main0"
                 tw="!my-0"
               >
@@ -278,7 +278,7 @@ export default function Home() {
                 <Button
                   color="main0"
                   kind="neon"
-                  size="big"
+                  size="lg"
                   variant="primary"
                   as="a"
                   target="_blank"
@@ -291,8 +291,8 @@ export default function Home() {
                   href="https://bit.ly/3GAAjii"
                   target="_blank"
                   kind="neon"
-                  size="big"
-                  variant="text-only"
+                  size="lg"
+                  variant="textOnly"
                   color="main0"
                   tw="!block !mt-6"
                 >
@@ -358,7 +358,7 @@ export default function Home() {
                 target="_blank"
                 kind="neon"
                 variant="primary"
-                size="big"
+                size="lg"
                 color="main0"
                 tw="!my-0"
               >
@@ -423,12 +423,12 @@ export default function Home() {
                       title: 'Reverse Oracle',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title: 'Storage Resource Nodes',
                       text: 'In progress',
                     },
-                    { kind: 'check', title: 'Decentralized Load Balancer' },
-                    { kind: 'check', title: 'Reproducible Virtual Machines' },
+                    { kind: 'info', title: 'Decentralized Load Balancer' },
+                    { kind: 'info', title: 'Reproducible Virtual Machines' },
                   ]}
                 />
               </div>
@@ -489,24 +489,24 @@ export default function Home() {
                       text: 'New EVM chains support',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title: 'IPFS on Virtual Machines Executors',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title:
                         'Geolocation for Storage and Compute Resource Nodes',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title: 'Storage Resource Nodes',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title: 'Decentralized Load Balancer',
                     },
                     {
-                      kind: 'check',
+                      kind: 'info',
                       title: 'Reproducible Virtual Machines',
                     },
                   ]}

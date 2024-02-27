@@ -1,59 +1,36 @@
-import { Logo, NavbarLink, NavbarLinkList } from '@aleph-front/aleph-core'
 import Link from 'next/link'
-
+import { LinkComponent, Logo } from '@aleph-front/core'
 import { StyledHeader, StyledButton, StyledNavbar } from './styles'
-import { useCallback, useState } from 'react'
+import { useHeader } from '@/hooks/useHeader'
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const handleCloseMenu = useCallback(() => setIsOpen(false), [setIsOpen])
+  const { pathname, routes, isOpen, breakpoint, handleToggle } = useHeader()
 
   return (
     <StyledHeader>
       <StyledNavbar
-        open={isOpen}
-        onToggle={setIsOpen}
-        logo={
-          <Link href="/">
-            <Logo />
-          </Link>
-        }
+        {...{
+          open: isOpen,
+          onToggle: handleToggle,
+          breakpoint,
+          pathname,
+          routes,
+          Link: Link as LinkComponent,
+          logo: (
+            <Link href="/">
+              <Logo text />
+            </Link>
+          ),
+        }}
       >
-        <>
-          <NavbarLinkList withSlash>
-            <NavbarLink>
-              <Link
-                key="solutions"
-                href="/#solutions"
-                onClick={handleCloseMenu}
-              >
-                Solutions
-              </Link>
-            </NavbarLink>
-            <NavbarLink>
-              <Link key="roadmap" href="/#roadmap" onClick={handleCloseMenu}>
-                Roadmap
-              </Link>
-            </NavbarLink>
-            <NavbarLink>
-              <Link key="indexing" href="/#indexing" onClick={handleCloseMenu}>
-                Indexing
-              </Link>
-            </NavbarLink>
-          </NavbarLinkList>
-          <NavbarLinkList>
-            <NavbarLink>
-              <StyledButton
-                key="cloud-app"
-                forwardedAs="a"
-                target="_blank"
-                href="https://console.aleph.im"
-              >
-                Launch Cloud dApp
-              </StyledButton>
-            </NavbarLink>
-          </NavbarLinkList>
-        </>
+        <StyledButton
+          key="cloud-app"
+          forwardedAs="a"
+          target="_blank"
+          href="https://console.aleph.im"
+        >
+          Launch Cloud dApp
+        </StyledButton>
       </StyledNavbar>
     </StyledHeader>
   )
